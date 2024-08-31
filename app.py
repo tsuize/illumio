@@ -21,6 +21,7 @@ def parse_flow_logs(log_filename, lookup_table):
             parts = line.split()
             dstport = int(parts[6])
             protocol = (
+                # assuming that the protocol field is always 6 or 17 or 1
                 "tcp" if parts[7] == "6" else "udp" if parts[7] == "17" else "icmp"
             )
             key = (dstport, protocol)
