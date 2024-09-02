@@ -1,3 +1,5 @@
+README
+
 Program Assumptions:
     -The program supports only the default log format, not custom formats.
     -Both lookup.csv and flow_logs.txt must contain data and should not be empty.
