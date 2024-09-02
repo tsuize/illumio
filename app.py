@@ -50,8 +50,8 @@ def write_output(tag_counts, port_protocol_counts, tag_output_file, pp_output_fi
 
 
 def main():
-    LOOKUPADDR = "testcase1/lookup.csv"
-    FLOWLOGADDR = "testcase1/flow_logs.txt"
+    LOOKUPADDR = "testcase3/lookup.csv"
+    FLOWLOGADDR = "testcase3/flow_logs.txt"
     lookup_table = load_lookup_table(LOOKUPADDR)
     tag_counts, port_protocol_counts = parse_flow_logs(
        FLOWLOGADDR, lookup_table
