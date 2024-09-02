@@ -5,7 +5,7 @@ Program Assumptions:
 -Both lookup.csv and flow_logs.txt must contain data and should not be empty.
 -The "port" referenced in port_protocol_counts.csv corresponds to dstport.
 -The protocol is limited to three types: tcp, icmp, and udp. Expanding support to all protocols would require mapping approximately 150 different protocol numbers.
--The lookup.csv and flow_logs.txt files are expected to follow the format provided in the sample and should not contain any erroneous rows.
+-The lookup.csv and flow_logs.txt files are expected to follow the format provided in the sample and should not be empty or contain any erroneous rows.
 -Tags are handled in a case-insensitive manner (e.g., "SV_P3" and "sv_p3" are treated as equivalent).
 -The program minimizes the use of external libraries or packages to facilitate easy review.
 
